@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: fstech-be
+    env: java
+    branch: main
+    buildCommand: "./mvnw clean package -DskipTests"
+    startCommand: "java -jar target/*.jar"
+    plan: free
+    region: oregon
