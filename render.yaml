@@ -1,7 +1,6 @@
 services:
   - type: web
     name: fstech-be
-    runtime: java
     branch: main
     buildCommand: "./mvnw clean package -DskipTests"
     startCommand: "java -jar target/*.jar"
